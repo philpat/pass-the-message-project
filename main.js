@@ -16,3 +16,15 @@ resetbtn.addEventListener("click" ,()=>{
   countervalue =0;
     counter.innerHTML = countervalue
 })
+
+
+
+const nav = document.querySelector(".nav")
+window.addEventListener("scroll", move)
+
+function move(){
+  if (document.body.scrollTop > 50
+   || document.documentElement.scrollTop > 50){
+      document.querySelector(".nav").classList.add("scroll")
+  }
+}
